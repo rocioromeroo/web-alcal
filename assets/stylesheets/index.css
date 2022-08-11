@@ -87,24 +87,82 @@ a{
     transform: translate(-50%, -50%);
 }
 
+.ver-products{
+  padding: 8px;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  background-color: transparent;
+  color: white;
+}
+
+.ver-products:hover{
+  background-color: var(--yellow-alcal);
+  color: var(--red-alcal);
+  border-color: var(--yellow-alcal) ;
+}
+
 
 /***********************************************************************************************/
 /* products */
 /***********************************************************************************************/
 #products-section{
-    padding: 80px;
+    padding-top: 2%;
 }
 
 .product p{
     color: var(--red-alcal);
 }
 
+.product {
+  padding: 2%;
+}
 
 /***********************************************************************************************/
-/* =Footer */
+/* About us */
+/***********************************************************************************************/
+#about-us-section{
+  padding: 2%;
+}
+
+.about-us-text{
+  padding-top: 4%;
+}
+
+.conoce-mas{
+  color: var(--red-alcal);
+  padding: 8px;
+  border-color: var(--red-alcal);
+  border-style: solid;
+  background-color: transparent;
+}
+
+.conoce-mas:hover{
+  background-color: var(--yellow-alcal);
+  color: var(--red-alcal);
+  border-color: var(--yellow-alcal) ;
+}
+
+
+/***********************************************************************************************/
+/* Numbers */
+/***********************************************************************************************/
+#numbers-section{
+  border-top: var(--red-alcal) 1px solid;
+  border-bottom: var(--red-alcal) 1px solid;
+}
+
+.number{
+  padding-top: 15px;
+  color: var(--red-alcal);
+}
+
+/***********************************************************************************************/
+/* Footer */
 /***********************************************************************************************/
 #footer-section {
     padding: 30px 0;
+    margin-top: 1%;
     background: var(--red-alcal);
     /* border-top: 1px solid #EEEEEE; */
   }
@@ -178,9 +236,7 @@ a{
 
 /***********************************************************************************************/
 /* whats app fixed */
-/***********************************************************************************************/
-
-  
+/***********************************************************************************************/  
   .whatsapp-fixed img{
     text-align: center;
     display: block;

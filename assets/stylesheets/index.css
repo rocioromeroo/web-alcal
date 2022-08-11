@@ -1,0 +1,244 @@
+:root{
+    --body-background:#f4f4f4; 
+    --second-body-bg:#eeeeee;
+    --articles-bg:white;
+    --red-alcal:#b80606;
+    --yellow-alcal:#edcd52;
+}
+
+body{
+    background-color: var(--body-background);
+    font-family: 'Roboto';
+}
+
+a{
+    text-decoration: none;
+}
+
+/***********************************************************************************************/
+/* contact bar */
+/***********************************************************************************************/
+.contact-bar{
+    padding: 0.2% ;
+    background-color: var(--red-alcal);
+}
+
+.link-contact-bar{
+    padding: 15px;
+    color: white;
+}
+
+.link-contact-bar:hover{
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+}
+
+
+/***********************************************************************************************/
+/* nav bar */
+/***********************************************************************************************/
+.nav-link{
+    color: var(--red-alcal)!important;
+    padding-bottom: 0px!important;
+}
+
+.navbar-toggler {
+    border-color: var(--red-alcal);
+    font-size: 10px;
+  }
+  
+.navbar-toggler  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(184,6,6, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav .active{
+    color: var(--red-alcal);
+    border-bottom: 1px solid;
+}
+
+.navbar-nav{
+    margin: 0!important;
+    padding-left: 76%;
+
+}
+
+/***********************************************************************************************/
+/* banner */
+/***********************************************************************************************/
+.banner-padre{
+    position: relative;
+}
+
+.banner-text{
+    padding: 2%;
+    background-color: rgb(0, 0, 0, 0.6);
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+}
+
+.center-text{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+
+/***********************************************************************************************/
+/* products */
+/***********************************************************************************************/
+#products-section{
+    padding: 80px;
+}
+
+.product p{
+    color: var(--red-alcal);
+}
+
+
+/***********************************************************************************************/
+/* =Footer */
+/***********************************************************************************************/
+#footer-section {
+    padding: 30px 0;
+    background: var(--red-alcal);
+    /* border-top: 1px solid #EEEEEE; */
+  }
+  
+  ul.footer-social-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul.footer-social-links li {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  
+  ul.footer-social-links li:first-child {
+    margin: 0;
+  }
+  
+  ul.footer-social-links li a {
+    font-size: 35px;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+  }
+  
+  ul.footer-social-links li a:after {
+    content: "";
+    display: block;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: white;
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+       -moz-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+         -o-transform: translateY(5px);
+            transform: translateY(5px);
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+  }
+  
+  ul.footer-social-links li a:hover:after {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+  }
+  
+  p.copyright {
+    padding-top: 10px;
+    color: white;
+  }
+  
+  .rocioromero{
+    color: white;
+    font-weight: bold;
+    margin-left: 4px;
+  }
+  
+  .rocioromero:hover{
+    text-decoration: none!important;
+    color: white;
+    opacity: 0.7;
+  }
+
+/***********************************************************************************************/
+/* whats app fixed */
+/***********************************************************************************************/
+.whatsapp-fixed i{
+    color: #00bb2d;
+  }
+  
+  .whatsapp-fixed {
+    text-align: center;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 40px;
+    position: fixed;
+    right: 75px;
+    bottom: 50px;
+    -webkit-transition: all .3s ease-in-out;
+       -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+         -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+    cursor: pointer;
+    z-index: 9999
+  }
+  
+  .whatsapp-fixed:hover {
+    opacity: .7;
+  }
+
+
+/***********************************************************************************************/
+/* rsponsive */
+/***********************************************************************************************/
+@media screen and (max-width: 575px) {
+    /***********************************************************************************************/
+    /* banner */
+    /***********************************************************************************************/
+    .banner-text{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    /***********************************************************************************************/
+    /* nav bar */
+    /***********************************************************************************************/
+    .navbar-brand{
+        padding: 0;
+    }
+
+    /***********************************************************************************************/
+    /* banner */
+    /***********************************************************************************************/
+    .banner-text{
+        padding: 5px;
+    }
+
+    .banner-text h1{
+        font-size: 10px;
+    }
+
+    .banner-text p{
+        font-size: 10px;
+    }
+}

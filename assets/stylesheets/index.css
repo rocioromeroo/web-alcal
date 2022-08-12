@@ -1,5 +1,9 @@
+* {
+  scroll-behavior: smooth;
+}
+
 :root{
-    --body-background:#f4f4f4; 
+    --body-background:#f4f4f4;
     --second-body-bg:#eeeeee;
     --articles-bg:white;
     --red-alcal:#b80606;
@@ -47,7 +51,7 @@ a{
     border-color: var(--red-alcal);
     font-size: 10px;
   }
-  
+
 .navbar-toggler  .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(184,6,6, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
@@ -110,7 +114,7 @@ a{
     padding-top: 2%;
 }
 
-.product p{
+.product h5{
     color: var(--red-alcal);
 }
 
@@ -122,7 +126,8 @@ a{
 /* About us */
 /***********************************************************************************************/
 #about-us-section{
-  padding: 2%;
+  padding-top: 2%;
+  padding-bottom: 4%;
 }
 
 .about-us-text{
@@ -148,12 +153,11 @@ a{
 /* Numbers */
 /***********************************************************************************************/
 #numbers-section{
-  border-top: var(--red-alcal) 1px solid;
-  border-bottom: var(--red-alcal) 1px solid;
+  background-color: rgb(237,205,82, 0.6);
 }
 
 .number{
-  padding-top: 15px;
+  padding-top: 14px;
   color: var(--red-alcal);
 }
 
@@ -162,9 +166,6 @@ a{
 /***********************************************************************************************/
 #fast-contact-section{
   padding: 1%;
-  margin-top: 2% ;
-  border-top: var(--yellow-alcal);
-  border-bottom: var(--yellow-alcal) solid 1px;
   background-color: var(--red-alcal);
   color: var(--red-alcal);
 }
@@ -179,6 +180,14 @@ a{
 
 .phone-fast-contact input{
   padding-right: 50%;
+}
+
+.phone-fast-contact{
+  padding: 0;
+}
+
+.btn-fast-contact{
+  padding: 0;
 }
 
 .fast-contact-title{
@@ -337,28 +346,28 @@ ul.contact-links li a:hover {
     background: var(--red-alcal);
     /* border-top: 1px solid #EEEEEE; */
   }
-  
+
   ul.footer-social-links {
     list-style-type: none;
     padding: 0;
   }
-  
+
   ul.footer-social-links li {
     display: inline-block;
     margin-left: 30px;
   }
-  
+
   ul.footer-social-links li:first-child {
     margin: 0;
   }
-  
+
   ul.footer-social-links li a {
     font-size: 35px;
     color: white;
     display: block;
     text-transform: uppercase;
   }
-  
+
   ul.footer-social-links li a:after {
     content: "";
     display: block;
@@ -378,7 +387,7 @@ ul.contact-links li a:hover {
          -o-transition: all .3s ease;
             transition: all .3s ease;
   }
-  
+
   ul.footer-social-links li a:hover:after {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -387,18 +396,18 @@ ul.contact-links li a:hover {
          -o-transform: translateY(0);
             transform: translateY(0);
   }
-  
+
   p.copyright {
     padding-top: 10px;
     color: white;
   }
-  
+
   .rocioromero{
     color: white;
     font-weight: bold;
     margin-left: 4px;
   }
-  
+
   .rocioromero:hover{
     text-decoration: none!important;
     color: white;
@@ -407,7 +416,7 @@ ul.contact-links li a:hover {
 
 /***********************************************************************************************/
 /* whats app fixed */
-/***********************************************************************************************/  
+/***********************************************************************************************/
   .whatsapp-fixed img{
     text-align: center;
     display: block;
@@ -426,7 +435,7 @@ ul.contact-links li a:hover {
     cursor: pointer;
     z-index: 9999
   }
-  
+
   .whatsapp-fixed:hover {
     opacity: .7;
   }
@@ -442,6 +451,12 @@ ul.contact-links li a:hover {
     .banner-text{
         display: none;
     }
+
+    #about-us-section{
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+    
 }
 
 @media screen and (max-width: 765px) {

@@ -1,0 +1,70 @@
+:root{
+    --body-background:#f4f4f4;
+    --second-body-bg:#eeeeee;
+    --articles-bg:white;
+    --red-alcal:#b80606;
+    --yellow-alcal:#edcd52;
+}
+
+/***********************************************************************************************/
+/* page title */
+/***********************************************************************************************/
+
+#page-title{
+    background-color: var(--red-alcal);
+    color: white;
+    padding: 0.5%;
+}
+
+.page-title-name{
+    display: flex;
+    align-items: center;
+}
+
+.page-title-name h1{
+    margin-bottom: 0;
+}
+
+.page-title-image{
+    padding: 0;
+}
+
+/***********************************************************************************************/
+/* models cards */
+/***********************************************************************************************/
+
+#models-cards{
+    border-bottom: 1px solid #b80606;
+}
+.model-card{  
+    border-radius: 15px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.model-card-content{
+    padding-top: 12%;
+    padding-bottom: 12%;
+    border-radius: 15px;
+    background-color: rgb(237,205,82, 0.6);
+}
+
+.card-image{
+    margin-bottom: 15%;
+}
+
+.card-text{
+    color: #b80606;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.card-text h3{
+    font-weight: bold;
+    color: #b80606;
+}
+
+.card-text a{
+    font-size: 14px;
+    color: #b80606;
+}

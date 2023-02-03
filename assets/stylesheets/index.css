@@ -106,21 +106,38 @@ a{
   border-color: var(--yellow-alcal) ;
 }
 
+.img-banner-mobile{
+  display: none;
+}
+
 
 /***********************************************************************************************/
 /* products */
 /***********************************************************************************************/
 #products-section{
-    padding-top: 2%;
-}
-
-.product h5{
-    color: var(--red-alcal);
-}
-
-.product {
   padding: 2%;
 }
+
+.product{
+  padding-top: 1%;
+}
+
+.products-title-desktop{
+  padding-top: 2%;
+  color: var(--red-alcal);
+}
+
+.products-mobile{
+  display: none;
+}
+
+.products-title-mobile{
+  padding-top: 2%;
+  color: var(--red-alcal);
+  display: none;
+}
+
+
 
 /***********************************************************************************************/
 /* About us */
@@ -207,12 +224,23 @@ a{
 }
 
 .consecionario{
-  padding-top: 2%;
+  padding: 2%;
 }
 
 .consecionario-text{
   padding-top: 2%;
 }
+
+.consecionario-text a{
+  text-decoration: none;
+  color: var(--red-alcal);
+}
+
+.consecionario-text a:hover{
+  text-decoration: none;
+  color: var(--yellow-alcal);
+}
+
 
 /***********************************************************************************************/
 /* Information */
@@ -448,15 +476,54 @@ ul.contact-links li a:hover {
     /***********************************************************************************************/
     /* banner */
     /***********************************************************************************************/
+    #banner-section{
+      margin-bottom: 5%;
+    }
+
     .banner-text{
         display: none;
     }
 
+    .img-banner-mobile{
+      display: block;
+    }
+
+    .img-banner-desktop{
+      display: none;
+    }
+
+    .products-title-mobile{
+      display: block;
+    }
+
+    .products-title-desktop{
+      display: none;
+    }
+
+    /***********************************************************************************************/
+    /* products */
+    /***********************************************************************************************/
+    .products-desktop{
+      display: none;
+    }
+
+    .product-mobile{
+      max-width: 30%;
+      margin: 0;
+      padding: 3.6%;
+    }
+
+    .products-mobile{
+      display: block;
+    }
+
+    /***********************************************************************************************/
+    /* about us */
+    /***********************************************************************************************/
     #about-us-section{
       padding-top: 30px;
       padding-bottom: 50px;
-    }
-    
+    }    
 }
 
 @media screen and (max-width: 765px) {

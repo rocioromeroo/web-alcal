@@ -1,33 +1,3 @@
-:root{
-    --body-background:#f4f4f4;
-    --second-body-bg:#eeeeee;
-    --articles-bg:white;
-    --red-alcal:#b80606;
-    --yellow-alcal:#edcd52;
-}
-
-/***********************************************************************************************/
-/* page title */
-/***********************************************************************************************/
-
-#page-title{
-    background-color: var(--red-alcal);
-    color: white;
-    padding: 0.5%;
-}
-
-.page-title-name{
-    display: flex;
-    align-items: center;
-}
-
-.page-title-name h1{
-    margin-bottom: 0;
-}
-
-.page-title-image{
-    padding: 0;
-}
 
 /***********************************************************************************************/
 /* models cards */
